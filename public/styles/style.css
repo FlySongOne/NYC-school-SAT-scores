@@ -1,0 +1,229 @@
+
+#top {
+   display:flex;
+}
+
+#nav{
+   text-align: center;
+   color:black;
+   width: 65%;
+   flex:left;
+}
+
+#logo{
+   width:30%;
+   flex:left;
+   padding:30px;
+}
+
+#logo img{
+   width:15%;
+   height:55%;
+}
+
+#landing{
+   text-align:center;
+   width:100%;
+   height:350px;
+   margin:0 auto;
+   padding-top:100px;
+   background-color: #1b98da;
+   color:#FFFFFF;
+   font-family: Helvetica;
+   display:flex;
+}
+
+#left{
+   width:45%;
+   flex:left;
+   height:100%;
+}
+
+#right{
+   width:45%;
+   flex:left;
+   height:100%;
+}
+
+#right img{
+   width:70%;
+   height:80%;
+}
+
+#landing #left a{
+   color:white;
+   padding:20px;
+   text-align:center;
+   margin-top:300px;
+}
+ul{
+   padding: 20px;
+   background: #FFFFFF;
+}
+
+li {
+   display: inline-block;
+   padding: 0px 20px 0px 20px;
+
+}
+
+a{
+   color:black;
+   text-decoration: none;
+   font-family: "corbel";
+   font-size: 25px;
+}
+
+footer{
+
+   height:100px;
+   color:black;
+   font-size:12px;
+   font-family:Helvetica;
+   font-weight: bold;
+   text-align:center;
+   margin-top:10px;
+}
+
+#end{
+   padding:20px;
+}
+
+.box{
+   margin: 3% auto;
+   text-align: center;
+   display:block;
+   border:2px solid #d1dae3;
+   width:90%;
+   color: white;
+   background-color: #1b98da;
+}
+.box a{
+   color:white;
+
+   padding:3px;
+}
+.single{
+   width:80%;
+   text-align: center;
+   margin: 0 auto;
+   border:1px solid #d1dae3;
+   background-color: #1b98da;
+   color:white;
+}
+
+.single a{
+   color:white;
+   padding:2px;
+   border:2px solid white;
+}
+
+.cell{
+   display:inline;
+}
+
+input{
+  width:200px;
+  height:40px;
+  font-size:20px;
+  padding:10px;
+  display:block;
+  margin:0 auto;
+
+}
+input[type='submit']{
+  background-color:black;
+  color:white;
+  width:225px;
+  height:40px;
+  font-size:20px;
+  padding:0;
+  text-align: center;
+
+}
+
+form{
+   height:40px;
+   width:20%;
+   display:inline-block;
+
+}
+
+form .edit{
+   width:100px;
+   margin:0;
+
+}
+
+#add{
+   width:25%;
+   text-align: center;
+   background-color: #1b98da;
+   margin-left:10%;
+
+}
+
+#add a{
+  color:white;
+}
+
+.edit{
+   width:80%;
+   text-align: center;
+   margin: 0 auto;
+   background-color: #1b98da;
+   color:white;
+   height:100%;
+}
+
+@media only screen and (max-width: 500px) {
+    #top{
+       display:block;
+
+    }
+    #nav{
+       flex:none;
+       width:100%;
+       margin:0;
+       padding:0;
+    }
+    #logo{
+       flex:none;
+       width:100%;
+       margin:0;
+       padding:0;
+    }
+    #landing{
+       display:block;
+       height:100%;
+    }
+    #left{
+       display:block;
+       width:100%;
+    }
+    #right{
+       display:block;
+       width:100%;
+    }
+
+  .single{
+     width:100%;
+     height:500px;
+  }
+  #add{
+     width:80%;
+  }
+
+  input[type='submit']{
+     display:block;
+     margin:0 auto;
+
+  }
+
+  form{
+     display:block;
+     margin: 15px 25% 0 22%;
+  }
+
+
+}

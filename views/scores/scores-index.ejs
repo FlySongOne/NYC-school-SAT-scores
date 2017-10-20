@@ -1,0 +1,24 @@
+<% include ../partials/header.ejs %>
+ <div id = "add">
+   <a href="/scores/add">Add a School and Scores</a>
+ </div>
+
+ <div id ="mainPage">
+ <% for (let score of data) { %>
+    <div class ="box">
+       <a href='/scores/<%= score.id%>'><p><%= score.school_name %></p></a>
+       <a href='/scores/<%= score.id%>'>Learn more</a>
+       <div class = "cell">
+          <form action="/scores/edit/<%= score.id %>" method = "GET" >
+               <input type="Submit" value="Edit" />
+          </form>
+
+          <form action="/scores/<%= score.id %>?_method=Delete " method = "POST">
+               <input type="Submit" value="Delete"/>
+          </form>
+       </div>
+    </div>
+   <% } %>
+ </div>
+<% include ../partials/footer.ejs %>
+

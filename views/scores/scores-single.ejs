@@ -1,0 +1,22 @@
+
+<% include ../partials/header.ejs %>
+    <div class = "single">
+       <h1><%= data.school_name%></h1>
+       <h3>Number of SAT Test Taken: <%= data.num_taken %></h3>
+       <h3>SAT Critical Reading Average : <%= data.reading %></h3>
+       <h3>SAT Math Average : <%= data.math %></h3>
+       <h3>SAT Writing Average : <%= data.writing %></h3>
+
+       <a href='/scores/'>See all schools</a>
+
+       <form action="/scores/edit/<%= data.id %>" method = "GET" >
+               <input type="Submit" value="Edit" />
+       </form>
+
+       <form action="/scores/<%= data.id %>?_method=Delete " method = "POST">
+               <input type="Submit" value="Delete"/>
+       </form>
+
+
+    </div>
+<% include ../partials/footer.ejs %>

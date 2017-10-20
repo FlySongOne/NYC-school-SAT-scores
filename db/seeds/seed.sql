@@ -1,0 +1,2 @@
+
+\i scores.sql

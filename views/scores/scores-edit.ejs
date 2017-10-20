@@ -1,0 +1,18 @@
+<% include ../partials/header.ejs %>
+
+<div class ="edit">
+  <h1><%= data.school_name %></h1>
+
+  <form class="edit" action="/scores/<%= data.id %>?_method=PUT" method="post">
+   <input name="school_name" type="text" value="<%= data.school_name %>"/>
+   <h3>Number of SAT Test Taken</h3> <input name="num_taken" type="text" value="<%= data.num_taken %>" />
+   <h3>SAT Critical Reading Average</h3>  <input name="reading" type="text" value="<%= data.reading %>"/>
+   <h3>SAT Math Average </h3><input name="math" type="text" value="<%= data.math %>" />
+   <h3>SAT Writing Average </h3> <input name="writing" type="text" value="<%= data.writing %>"/>
+
+   <input type="Submit" value="Update"/>
+  </form>
+
+</div>
+ <% include ../partials/footer.ejs %>
+

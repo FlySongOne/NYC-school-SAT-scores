@@ -1,0 +1,15 @@
+<% include ../partials/header.ejs %>
+
+<div class ="single">
+ <form method='POST' action='/scores'>
+   <input name='school_name' type='text' placeholder='School name' />
+   <input name='num_taken' type='text' placeholder='Num of Students taken' />
+   <input name='reading' type='text' placeholder='Reading' />
+   <input name='math' type='text' placeholder='Math'/>
+   <input name='writing' type='text' placeholder='Writing' />
+
+   <input type='submit' value='Submit' />
+ </form>
+</div>
+ <% include ../partials/footer.ejs %>
+
