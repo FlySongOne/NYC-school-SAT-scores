@@ -17,7 +17,7 @@ that are already in the list.
 
 Node js, express, JavaScript, Postgres, SQL
 
-Heroku link : https://radiant-forest-10356.herokuapp.com
+Heroku link : https://nyc-sat-score.herokuapp.com/
 
 # Future expansion 
 
