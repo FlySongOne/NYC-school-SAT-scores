@@ -5,13 +5,8 @@
 ## What is NYC-school-SAT-scores? 
 
 The app shows a list of NYC schools' average SAT scores. It provides users 
-average Math, Writing and Reading scores and school's general information, 
-such as address, phone number and email address. Users have options to 
-put schools into favorite school section. Users can delete, add or edit schools 
+average Math, Writing and Reading scores. Users can create, read, update and delete schools 
 that are already in the list.  
-
-## Wireframe
-![wireFrames0](./images/wireFrame_0.png)
 
 # Landing Page, List, Scores 
 ![landingPage](./images/landingPage.png)

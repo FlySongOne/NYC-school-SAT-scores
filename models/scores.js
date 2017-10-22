@@ -1,5 +1,5 @@
 // model
-
+// create instance of db configuration
 const db = require('../db/config');
 //creating an empty object Score
 const Score = {};
@@ -8,7 +8,7 @@ const Score = {};
 Score.findAll = () => {
   return db.query('SELECT * FROM scores');
 }
-
+// method to create an item in a list
 Score.create = (scores) => {
    return db.one(`
      INSERT INTO scores
@@ -17,7 +17,7 @@ Score.create = (scores) => {
      RETURNING *
    `, [ scores.school_name, scores.num_taken, scores.reading, scores.math, scores.writing]);
  }
-
+// method to update an item in a list
 Score.update = (scores, id) => {
   return db.one(`
      UPDATE scores SET
@@ -31,6 +31,7 @@ Score.update = (scores, id) => {
    `, [scores.school_name, scores.num_taken, scores.reading, scores.math, scores.writing, id]);
  }
 
+// method to find an item by id
 Score.findById = (id) =>{
   return db.oneOrNone(
     `
@@ -39,6 +40,7 @@ Score.findById = (id) =>{
     `,[id]);
 }
 
+// method to destroy one item by id
 Score.destroy = (id) => {
    return db.none(`
      DELETE FROM scores

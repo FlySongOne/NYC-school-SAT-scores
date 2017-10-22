@@ -5,6 +5,7 @@ const Score = require('../models/scores');
 const scoresController = {};
 
 //using scoreController object, call functions
+// index function shows all items in scores table in a database
 scoresController.index = (req, res) => {
   Score.findAll()
     .then(scores => {
@@ -17,7 +18,7 @@ scoresController.index = (req, res) => {
       res.status(500).json(err);
     });
 }
-
+// create function creates a new item to the list in a table
 scoresController.create = (req, res) => {
    Score.create({
      school_name: req.body.school_name,
@@ -33,6 +34,7 @@ scoresController.create = (req, res) => {
    });
 };
 
+// edit and update work together to update a selected item in a list
 scoresController.edit = (req, res) => {
   Score.findById(req.params.id)
     .then(score => {
@@ -59,7 +61,7 @@ scoresController.update = (req, res) => {
      res.status(500).json(err);
    })
 };
-
+// controller method that shows one item by id
 scoresController.show = (req,res) => {
    Score.findById(req.params.id)
    .then(scores =>{
@@ -73,6 +75,7 @@ scoresController.show = (req,res) => {
    })
 };
 
+// controller method that deletes one item by id
 scoresController.delete = (req, res) => {
    Score.destroy(req.params.id)
      .then(() => {
