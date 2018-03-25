@@ -6,7 +6,7 @@
 
 The app shows a list of NYC schools' average SAT scores. It provides users 
 average Math, Writing and Reading scores. Users can create, read, update and delete schools 
-that are already in the list.  
+that are already on the list.  
 
 # Landing Page, List, Scores 
 ![landingPage](./images/landingPage.png)
